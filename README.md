@@ -1,16 +1,14 @@
-SpaceCrafts
-===========
+SpaceCrafts Utilities
+====================
 
-This project is for creating a causal intelligence using generalized causal inference starting from axioms.
-
-A simple Python package is provided using a ``src`` layout. Install it in editable mode with:
+This repository contains miscellaneous utility algorithms. Install the package in editable mode using:
 
 .. code-block:: bash
 
     pip install -e .
 
-The package exposes a ``rocket_info`` function::
+Currently the package provides a Quine–McCluskey implementation for boolean function minimization::
 
-    >>> import spacecrafts
-    >>> spacecrafts.rocket_info()
-    'SpaceCrafts rocket ready for launch!'
+    >>> from spacecrafts.utilities import quine_mccluskey
+    >>> quine_mccluskey([1, 3, 7], dontcares=[0])
+    ['-11']

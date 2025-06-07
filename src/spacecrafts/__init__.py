@@ -1,4 +1,5 @@
-__all__ = ["rocket_info"]
+"""SpaceCrafts utility package."""
 
-from .rocket import rocket_info
+from .utilities import quine_mccluskey
 
+__all__ = ["quine_mccluskey"]
